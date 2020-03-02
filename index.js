@@ -124,7 +124,10 @@ const loadedDice = (numberOfSides, cheatLevel, desiredValue ) => {
 
 // Roll Set and delete Minor Roll
 // Input: numberOfDices, numberOfSides
-// Return: array with 3 elements: total result, array without minor, roll that got out
+// Output: array with 3 elements 
+// -- I: total result
+// -- II: array without minor
+// -- III: minor value
 
 const rollSetDeleteMinor = (numberOfDices, numberOfSides) => {
     if (typeof numberOfDices != "number") {return "dice volume must be a number"}
@@ -140,6 +143,11 @@ const rollSetDeleteMinor = (numberOfDices, numberOfSides) => {
 }
 
 // Roll Set and delete Major Roll
+// Input: numberOfDices, numberOfSides
+// Output: array with 3 elements 
+// -- I: total result
+// -- II: array without major
+// -- III: major value
 
 const rollSetDeleteMajor = (numberOfDices, numberOfSides) => {
     if (typeof numberOfDices != "number") {return "dice volume must be a number"}
@@ -156,3 +164,20 @@ const rollSetDeleteMajor = (numberOfDices, numberOfSides) => {
 
 
 
+export default 
+{randomNumber,
+rollD4,
+rollD6,
+rollD8,
+rollD10,
+rollD12,
+rollD20,
+rollD100,
+flipACoin,
+anySidedDice,
+anySidedDiceModifier,
+manySidedDice,
+diceBag,
+loadedDice,
+rollSetDeleteMinor,
+rollSetDeleteMajor}

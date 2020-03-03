@@ -16,13 +16,17 @@ A Library with many different dice rolling functions, first used for personal pr
   
 Calling any of the functions below, returns dice result for respesctive dice.
 
-* `rollD4()` // returns random number from 1 to 4  
-* `rollD6()` // returns random number from 1 to 6  
-* `rollD8()` // returns random number from 1 to 8  
-* `rollD10()` // returns random number from 1 to 10  
-* `rollD12()` // returns random number from 1 to 12  
-* `rollD20()` // returns random number from 1 to 20  
-* `rollD100()` // not platonic, returns random number from 1 to 100  
+```javascript
+rollD4() 
+// returns random number from 1 to 4  
+```
+rollD4() // returns random number from 1 to 4  
+`rollD6()` // returns random number from 1 to 6  
+`rollD8()` // returns random number from 1 to 8  
+`rollD10()` // returns random number from 1 to 10  
+`rollD12()` // returns random number from 1 to 12  
+`rollD20()` // returns random number from 1 to 20  
+`rollD100()` // not platonic, returns random number from 1 to 100  
   
 #### Flip a Coin  
   

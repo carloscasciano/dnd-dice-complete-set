@@ -77,7 +77,7 @@ const manySidedDice = (numberOfDices, numberOfSides) => {
 const diceBag = (userDiceArray) => {
     let returnArr = [[],[]]
     for (let i = 0; i < userDiceArray.length; i++) {
-        const numberOfSides = userDiceArray[i].substr(1)
+        const numberOfSides = parseInt(userDiceArray[i].slice(1)) 
         returnArr[1].push(anySidedDice(numberOfSides))
     }
     returnArr[0] = returnArr[1].reduce((acc,currVal) => acc + currVal)
@@ -163,21 +163,20 @@ const rollSetDeleteMajor = (numberOfDices, numberOfSides) => {
 }
 
 
-
-export default 
-{randomNumber,
-rollD4,
-rollD6,
-rollD8,
-rollD10,
-rollD12,
-rollD20,
-rollD100,
-flipACoin,
-anySidedDice,
-anySidedDiceModifier,
-manySidedDice,
-diceBag,
-loadedDice,
-rollSetDeleteMinor,
-rollSetDeleteMajor}
+export 
+    {randomNumber,
+    rollD4,
+    rollD6,
+    rollD8,
+    rollD10,
+    rollD12,
+    rollD20,
+    rollD100,
+    flipACoin,
+    anySidedDice,
+    anySidedDiceModifier,
+    manySidedDice,
+    diceBag,
+    loadedDice,
+    rollSetDeleteMinor,
+    rollSetDeleteMajor}

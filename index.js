@@ -1,9 +1,4 @@
-// Basic Function
-
 const randomNumber = () => {return Math.random()}
-
-// Basic Pythagorean DiceSet
-// Output: Random Number from 1 to Total dice sides
 
 const rollD4 = () => {return (Math.floor(randomNumber()*4)+1)}
 const rollD6 = () => {return (Math.floor(randomNumber()*6)+1)}
@@ -12,19 +7,9 @@ const rollD10 = () => {return (Math.floor(randomNumber()*10)+1)}
 const rollD12 = () => {return (Math.floor(randomNumber()*12)+1)}
 const rollD20 = () => {return (Math.floor(randomNumber()*20)+1)}
 
-// Extra D100
-// Output: Random Number from 1 to 100
-
 const rollD100 = () => {return (Math.floor(randomNumber()*100)+1)}
 
-// Flip a Coin
-// Output: String with "heads" or "tails"
-
 const flipACoin = () => { return ((randomNumber() >= .5) ? "heads" : "tails")}
-
-// AnySided Dice
-// Input: Number larger or equal than 2
-// Output: Random Number from 1 to Input value
 
 const anySidedDice = (numberOfSides) => {
     if (typeof numberOfSides != "number") {return "must be a number"}
@@ -32,26 +17,12 @@ const anySidedDice = (numberOfSides) => {
     return (Math.floor(randomNumber() * numberOfSides)+1)
 }
 
-// Dice with Modifier
-// Input: 
-// -- I: Number larger or equal than 2 
-// -- II: Value to be added or subtracted
-// Output: andom Number from 1 to first input value added second input
-
 const anySidedDiceModifier = (numberOfSides, modifier) => {
     if (typeof numberOfSides != "number") {return "sides must be a number"}
     if (numberOfSides <= 1) { return "must have at least 2 sides" }
     if (typeof modifier != "number") {return "modifier must be a number"}
     return (Math.floor(randomNumber() * numberOfSides)+1) + modifier
 }
-
-// Many Dices of Any Sides
-// Input: 
-// -- I: Number of dices to be rolled, must be larger or equal than 1
-// -- II: Side of dices to be rolled
-// Output: Array with two elements
-// -- I: Sum of rolls
-// -- II: All roll values
 
 const manySidedDice = (numberOfDices, numberOfSides) => {
     if (typeof numberOfDices != "number") {return "dice volume must be a number"}
@@ -67,13 +38,6 @@ const manySidedDice = (numberOfDices, numberOfSides) => {
     return returnArr
 }
 
-// DiceBag
-// Input: array with any elements, elements are strings of the dices to roll
-// --example input: ["d4", "d6", "d10", "d100", "d42"] 
-// Output: Array with two elements
-// -- I: Sum of rolls
-// -- II: All roll values
-
 const diceBag = (userDiceArray) => {
     let returnArr = [[],[]]
     for (let i = 0; i < userDiceArray.length; i++) {
@@ -83,15 +47,6 @@ const diceBag = (userDiceArray) => {
     returnArr[0] = returnArr[1].reduce((acc,currVal) => acc + currVal)
     return returnArr
 }
-
-// Loaded Dice
-// Input: Array with three elements
-// -- I: Sides for the loaded dice
-// -- II: Cheat level (can use string pre-sets ("bard","rogue" or "mobster") or a cheat percentage from 0 to 1) 
-// -- III: Desired Value that can be get as output
-// example Input : (6, "rogue", 3)
-// Output: Random number with higher chances of getting third input
-
 
 const loadedDice = (numberOfSides, cheatLevel, desiredValue ) => {
     if (typeof numberOfSides != "number") {return "sides must be a number"}
@@ -122,13 +77,6 @@ const loadedDice = (numberOfSides, cheatLevel, desiredValue ) => {
     return anySidedDice(numberOfSides)
 }
 
-// Roll Set and delete Minor Roll
-// Input: numberOfDices, numberOfSides
-// Output: array with 3 elements 
-// -- I: total result
-// -- II: array without minor
-// -- III: minor value
-
 const rollSetDeleteMinor = (numberOfDices, numberOfSides) => {
     if (typeof numberOfDices != "number") {return "dice volume must be a number"}
     if (numberOfSides <= 0) { return "must have at least 1 dice" }
@@ -142,13 +90,6 @@ const rollSetDeleteMinor = (numberOfDices, numberOfSides) => {
     return resultArr
 }
 
-// Roll Set and delete Major Roll
-// Input: numberOfDices, numberOfSides
-// Output: array with 3 elements 
-// -- I: total result
-// -- II: array without major
-// -- III: major value
-
 const rollSetDeleteMajor = (numberOfDices, numberOfSides) => {
     if (typeof numberOfDices != "number") {return "dice volume must be a number"}
     if (numberOfSides <= 0) { return "must have at least 1 dice" }
@@ -161,7 +102,6 @@ const rollSetDeleteMajor = (numberOfDices, numberOfSides) => {
     resultArr[0] = resultArr[1].reduce((acc,currVal) => acc + currVal)
     return resultArr
 }
-
 
 export 
     {randomNumber,

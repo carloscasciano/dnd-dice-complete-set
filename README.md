@@ -20,13 +20,31 @@ Calling any of the functions below, returns dice result for respesctive dice.
 rollD4() 
 // returns random number from 1 to 4  
 ```
-rollD4() // returns random number from 1 to 4  
-`rollD6()` // returns random number from 1 to 6  
-`rollD8()` // returns random number from 1 to 8  
-`rollD10()` // returns random number from 1 to 10  
-`rollD12()` // returns random number from 1 to 12  
-`rollD20()` // returns random number from 1 to 20  
-`rollD100()` // not platonic, returns random number from 1 to 100  
+```javascript
+rollD6() 
+// returns random number from 1 to 6  
+```
+```javascript
+rollD8() 
+// returns random number from 1 to 8  
+```
+```javascript
+rollD10() 
+// returns random number from 1 to 10 
+```
+```javascript
+rollD12() 
+// returns random number from 1 to 12  
+```
+```javascript
+rollD20() 
+// returns random number from 1 to 20  
+```
+```javascript
+rollD100() 
+// returns random number from 1 to 100  
+```
+
   
 #### Flip a Coin  
   

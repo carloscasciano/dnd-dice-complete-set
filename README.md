@@ -123,3 +123,8 @@ Returns an array with three elements, first is total roll after taking major, se
 rollSetDeleteMinor(4,6) // rolls 4d6 and returns, for example: [[10],[6,3,1],[6]]
 
 ``` 
+
+
+## Extras
+
+Contact me on carlos.casciano@gmail.com or https://www.linkedin.com/in/carloscasciano/ if you need any help.

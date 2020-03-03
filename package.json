@@ -1,6 +1,6 @@
 {
   "name": "dnd-dice-complete-set",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Dungeons & Dragons RPG dice set functions to be used in any project.",
   "main": "index.js",
   "scripts": {

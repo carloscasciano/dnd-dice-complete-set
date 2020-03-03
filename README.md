@@ -41,7 +41,7 @@ rollD100()  // returns random number from 1 to 100
   
 #### Flip a Coin  
   
-Calling `flipACoin()` returns string `heads` or `tails`.
+Calling ```javascript flipACoin()``` returns string `"heads"` or `"tails"`.
 
 If you need the number, check `anySidedDice()` function
   

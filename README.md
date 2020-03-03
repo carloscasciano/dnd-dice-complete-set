@@ -17,40 +17,33 @@ A Library with many different dice rolling functions, first used for personal pr
 Calling any of the functions below, returns dice result for respesctive dice.
 
 ```javascript
-rollD4() 
-// returns random number from 1 to 4  
+rollD4()  // returns random number from 1 to 4  
 ```
 ```javascript
-rollD6() 
-// returns random number from 1 to 6  
+rollD6()  // returns random number from 1 to 6  
 ```
 ```javascript
-rollD8() 
-// returns random number from 1 to 8  
+rollD8()  // returns random number from 1 to 8  
 ```
 ```javascript
-rollD10() 
-// returns random number from 1 to 10 
+rollD10()  // returns random number from 1 to 10 
 ```
 ```javascript
-rollD12() 
-// returns random number from 1 to 12  
+rollD12()  // returns random number from 1 to 12  
 ```
 ```javascript
-rollD20() 
-// returns random number from 1 to 20  
+rollD20()  // returns random number from 1 to 20  
 ```
 ```javascript
-rollD100() 
-// returns random number from 1 to 100  
+rollD100()  // returns random number from 1 to 100  
 ```
 
   
 #### Flip a Coin  
   
-Calling * [`flipACoin()` ] returns string * [`heads` ] or * [`tails` ].
+Calling `flipACoin()` returns string `heads` or `tails`.
 
-If you need the number, check * [`anySidedDice()` function ] 
+If you need the number, check `anySidedDice()` function
   
 #### Loaded Dice (cheat)
   

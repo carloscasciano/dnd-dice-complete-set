@@ -4,11 +4,11 @@ A Library with many different dice rolling functions, first used for personal pr
 
 ## Installing
   
-* `npm install dnd-dice-complete-set`
+`npm install dnd-dice-complete-set`
 
 ## Importing
 
-* `import {rollD20} from 'dnd-dice-complete-set'`
+`import {rollD20} from 'dnd-dice-complete-set'`
 
 ## Content:
 
